@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+/*----admin-----*/
+li{
+    list-style: none;
+}
+h1, h2{
+    color:#000;
+}
+h3{
+    color:gray;
+}
+.side-menu{
+    position: fixed;
+    background:#add8e0;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.side-menu li{
+    font-size: 24px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover {
+    background: #fff;
+}
+.container{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    background: #f1f1f1;
+    color: #000;
+}
+.container .headers{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container .headers .navs{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.user{
+    padding-inline-start: 85%;
+}
+.user ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+
+.user ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #61a5c2;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.user ul li:hover::after{
+    width:100%
+}
+.user img{
+    width: 20px;
+    height: 20px;
+}
+.container .content{
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+}
+.container .content .cards{
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card{
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .content .cards .card img{
+    width: 50px;
+    height: 50px;
+}
+/************************** product table styling *********************************/
+
+table {
+    width:98%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  td,
+  th {
+    padding: 20px 16px;
+    text-align: center;
+  }
+  th {
+    background-color: #add8e0;
+    color: #000;
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: bold;
+  }
+  tr {
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eeeeee;
+  }
+.modal-body{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   margin-top:30px;
+}
+.productForm{
+    width:80%;
+    padding:40px;
+    background: #fff;
+    margin-LEFT:50px;
+    
+}
+.productForm .form-group{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+}
+.productForm .form-group input{
+    width: 100%;
+    padding:5px 0;
+    font-size:16px;
+    margin:10px 0;
+    border:none;
+    border-bottom:2px solid #333;
+    outline:none;
+    resize:none;
+}
+.form-group{
+color:#000;
+}
+ button{
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    background: #8ee9f5;
+    padding: 10px 25px 10px 30px;
+    border-radius: 40px;
+    margin-left: 30px;
+}
+button a{
+    text-decoration:none;
+    color: #000;
+}
+.btn-container{
+    align-items: center;
+}
+.message{
+    top:0;left:0; right:0;
+    z-index:1000;
+    padding:10px 5px;
+   text-align:center;
+    box-shadow:#333;
+    color:black;
+    font-size:20px;
+    background-color:#8ee9f5 ;
+  }
+
